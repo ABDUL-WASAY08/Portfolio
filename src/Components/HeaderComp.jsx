@@ -80,7 +80,6 @@ function HeaderComp() {
               }`}></span>
             </button>
           </div>
-          {/* Resume Button */}
           <div className="hidden md:block">
             <a 
               href="/resume.pdf" 

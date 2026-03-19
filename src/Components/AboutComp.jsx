@@ -108,8 +108,6 @@ function AboutComp() {
             </p>
           </div>
         </div>
-
-        {/* Fun Quote - Mobile optimized */}
         <div className="mt-12 md:mt-16 text-center relative">
           <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
             <div className="w-8 h-8 md:w-10 md:h-10 l flex items-center justify-center animate-spin-slow">
