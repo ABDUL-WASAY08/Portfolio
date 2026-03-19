@@ -6,9 +6,9 @@ import MainScreen from './Screens/MainScreen'
 function App() {
 
   return (
-    <>
+    <div className=''>
     <MainScreen />
-    </>
+    </div>
   )
 }
 

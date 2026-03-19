@@ -14,7 +14,7 @@ function HeaderComp() {
   };
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-white/10 backdrop-blur-md border-b border-gray-200 dark:bg-gray-900/40 dark:border-gray-800">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-black/10 backdrop-blur-md">
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <div className="flex-shrink-0">
@@ -77,20 +77,6 @@ function HeaderComp() {
               Skills
               <span className={`absolute bottom-0 left-0 w-full h-0.5 bg-blue-600 dark:bg-blue-400 transform scale-x-0 transition-transform duration-300 origin-left group-hover:scale-x-100 ${
                 activeSection === 'skills' ? 'scale-x-100' : ''
-              }`}></span>
-            </button>
-            
-            <button 
-              onClick={() => scrollToSection('contact')}
-              className={`cursor-pointer relative px-3 py-2 text-sm font-medium transition-colors duration-300 group ${
-                activeSection === 'contact' 
-                  ? 'text-blue-600 dark:text-blue-400' 
-                  : 'text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400'
-              }`}
-            >
-              Contact
-              <span className={`absolute bottom-0 left-0 w-full h-0.5 bg-blue-600 dark:bg-blue-400 transform scale-x-0 transition-transform duration-300 origin-left group-hover:scale-x-100 ${
-                activeSection === 'contact' ? 'scale-x-100' : ''
               }`}></span>
             </button>
           </div>
