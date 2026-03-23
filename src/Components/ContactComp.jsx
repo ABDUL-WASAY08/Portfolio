@@ -6,16 +6,47 @@ import { useNavigate } from 'react-router-dom';
 
 function ContactForm() {
     const [state, handleSubmit] = useForm("mqeyrpzk");
-    const navigate=useNavigate();
+    const navigate = useNavigate();
     if (state.succeeded) {
         return (
-            <div className="bg-gradient-to-b from-black/5 to-gray-900 min-h-screen flex items-center justify-center py-16 px-4">
-                <div className="max-w-md w-full bg-white/5 backdrop-blur-sm rounded-2xl p-8 text-center border border-white/10">
-                    <div className="w-16 h-16 bg-green-500/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                        <CheckCircle className="w-8 h-8 text-green-400" />
+            <div className="bg-gradient-to-b from-black/5 to-gray-900  flex items-center justify-center py-16 px-4">
+                <header className="fixed top-0 left-0 right-0 z-50 bg-black/10 backdrop-blur-md">
+                    <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                        <div className="flex items-center justify-between h-16">
+                            <div className="flex items-center gap-2 group cursor-pointer" onClick={() => navigate('/')}>
+                                <ArrowLeft className="text-blue-600 dark:text-blue-400" />
+
+                                <p className=" opacity-0 group-hover:opacity-100 transition-all duration-300 text-md font-bold text-gray-900 dark:text-white pointer-events-none">
+                                    <span className="text-blue-600 dark:text-blue-400">ABDUL</span>WASAY
+                                </p>
+                            </div>
+                            <div className="block">
+                                <a
+                                    href="/Resume.pdf"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition-colors"
+                                >
+                                    Resume
+                                </a>
+                            </div>
+                        </div>
+                    </nav>
+                </header>
+                <div className="max-w-md w-full min-h-[110vh] p-8 text-center flex items-center justify-center">
+                    <div className='flex-col pointer-envents-none'>
+                        <div className="w-16 h-16 bg-green-500/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <CheckCircle className="w-8 h-8 text-green-400" />
+                        </div>
+                        <h3 className="text-2xl font-bold text-white mb-2">Thanks for joining!</h3>
+                        <p className="text-gray-300">We'll get back to you soon.</p>
+                        <button className='text-2xl p-3 mt-5 text-white cursor-pointer bg-gray-900 rounded-2xl hover:bg-gray-700 transition-all duration-300 transform hover:scale-105 active:scale-95'
+                        onClick={()=>navigate('/')}
+                        >
+                            Back to home
+                        </button>
                     </div>
-                    <h3 className="text-2xl font-bold text-white mb-2">Thanks for joining!</h3>
-                    <p className="text-gray-300">We'll get back to you soon.</p>
+
                 </div>
             </div>
         );
@@ -26,7 +57,7 @@ function ContactForm() {
             <header className="fixed top-0 left-0 right-0 z-50 bg-black/10 backdrop-blur-md">
                 <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="flex items-center justify-between h-16">
-                        <div className="flex items-center gap-2 group cursor-pointer" onClick={()=>navigate('/')}>
+                        <div className="flex items-center gap-2 group cursor-pointer" onClick={() => navigate('/')}>
                             <ArrowLeft className="text-blue-600 dark:text-blue-400" />
 
                             <p className=" opacity-0 group-hover:opacity-100 transition-all duration-300 text-md font-bold text-gray-900 dark:text-white pointer-events-none">
