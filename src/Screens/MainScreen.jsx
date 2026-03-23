@@ -24,7 +24,10 @@ function MainScreen() {
         <ExperienceSection />
       </div>
       <SkillsComp />
-      <FooterComp />
+      <div id='Footer'>
+        <FooterComp />
+      </div>
+
     </div>
   )
 }

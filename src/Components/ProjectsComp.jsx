@@ -129,7 +129,7 @@ function ProjectsComp() {
           <div className="flex gap-3 mt-10 mb-10 ">
             <button
               className={`px-3 py-2 rounded-xl cursor-pointer transition-all duration-300 ${active === "dummy"
-                  ? "bg-purple-600 text-white"
+                  ? "bg-blue-600 text-white"
                   : "bg-gray-800 hover:bg-gray-700 text-gray-300"
                 }`}
               onClick={() => setActive('dummy')}
@@ -138,7 +138,7 @@ function ProjectsComp() {
             </button>
             <button
               className={`px-3 py-2 rounded-xl cursor-pointer transition-all duration-300 ${active === "Company"
-                  ? "bg-purple-600 text-white"
+                  ? "bg-blue-600 text-white"
                   : "bg-gray-800 hover:bg-gray-700 text-gray-300"
                 }`}
               onClick={() => setActive('Company')}
