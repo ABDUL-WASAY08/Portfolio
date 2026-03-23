@@ -6,6 +6,7 @@ import ProjectsComp from '../Components/ProjectsComp'
 import SkillsComp from '../Components/SkillsComp'
 import AboutComp from '../Components/AboutComp'
 import ExperienceSection from '../Components/Experience'
+import FooterComp from '../Components/FooterComp'
 
 
 function MainScreen() {
@@ -23,6 +24,7 @@ function MainScreen() {
         <ExperienceSection />
       </div>
       <SkillsComp />
+      <FooterComp />
     </div>
   )
 }
