@@ -1,17 +1,18 @@
 import React, { useEffect, useRef, useState } from 'react';
-import { 
-  Code2, 
-  Database, 
-  Cloud, 
-  Wrench, 
-  Terminal, 
-  Server, 
-  Globe, 
+import {
+  Code2,
+  Database,
+  Cloud,
+  Wrench,
+  Terminal,
+  Server,
+  Globe,
   Layers,
   Zap,
   Shield,
   Cpu,
-  GitBranch
+  GitBranch,
+  WandSparklesIcon
 } from 'lucide-react';
 
 function SkillsComp() {
@@ -43,21 +44,20 @@ function SkillsComp() {
 
   useEffect(() => {
     if (isVisible) {
-      // Animate expertise cards with stagger
       expertiseRefs.current.forEach((card, index) => {
         if (card) {
           card.style.animation = `slideUp 0.5s ease-out forwards ${index * 0.1}s`;
         }
       });
 
-      // Animate skill cards with stagger
+
       skillCardsRef.current.forEach((card, index) => {
         if (card) {
           card.style.animation = `fadeInUp 0.6s ease-out forwards ${index * 0.15}s`;
         }
       });
 
-      // Trigger bar animations
+
       const bars = {};
       skillCategories.forEach((category, categoryIndex) => {
         category.skills.forEach((skill, skillIndex) => {
@@ -85,6 +85,17 @@ function SkillsComp() {
       ]
     },
     {
+      title: "Frontend",
+      icon: <WandSparklesIcon className="w-6 h-6" />,
+      color: "from-blue-800 to-blue-900",
+      skills: [
+        { name: "React", level: 85 },
+        { name: "JSX", level: 85 },
+        { name: "TSX", level: 70 },
+        { name: "DOM", level: 90 }
+      ]
+    },
+    {
       title: "Databases & Storage",
       icon: <Database className="w-6 h-6" />,
       color: "from-blue-800 to-blue-900",
@@ -99,9 +110,10 @@ function SkillsComp() {
       icon: <Cloud className="w-6 h-6" />,
       color: "from-blue-800 to-blue-900",
       skills: [
-        { name: "AWS", level: 85 },
-        { name: "Docker", level: 90 },
-        { name: "GitHub Actions", level: 80 },
+        { name: "AWS (learing)", level: 40 },
+        { name: "Docker (learning)", level: 40 },
+        { name: "Vercel (learning)", level: 90 },
+        { name: "GitHub Actions", level: 90 },
       ]
     },
     {
@@ -110,7 +122,6 @@ function SkillsComp() {
       color: "from-blue-800 to-blue-900",
       skills: [
         { name: "Git", level: 95 },
-        { name: "Docker", level: 90 },
         { name: "Postman", level: 95 },
         { name: "VS Code", level: 90 },
         { name: "Figma", level: 70 },
@@ -147,21 +158,19 @@ function SkillsComp() {
   ];
 
   return (
-    <section 
+    <section
       ref={sectionRef}
-      id="skills" 
+      id="skills"
       className="py-20 bg-gradient-to-b from-gray-900 to-black overflow-hidden"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <div 
-            className={`w-24 h-1 bg-gradient-to-r from-blue-400 to-purple-400 mx-auto rounded-full mb-6 transition-all duration-1000 ${
-              isVisible ? 'w-24 opacity-100' : 'w-0 opacity-0'
-            }`}
+          <div
+            className={`w-24 h-1 bg-gradient-to-r from-blue-400 to-purple-400 mx-auto rounded-full mb-6 transition-all duration-1000 ${isVisible ? 'w-24 opacity-100' : 'w-0 opacity-0'
+              }`}
           ></div>
-          <p className={`text-lg text-gray-400 max-w-2xl mx-auto transition-all duration-700 delay-200 ${
-            isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
-          }`}>
+          <p className={`text-lg text-gray-400 max-w-2xl mx-auto transition-all duration-700 delay-200 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
+            }`}>
             Technologies I work with and tools I use to build scalable solutions
           </p>
         </div>
@@ -187,9 +196,7 @@ function SkillsComp() {
             </div>
           ))}
         </div>
-
-        {/* Skills Categories */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
           {skillCategories.map((category, categoryIndex) => (
             <div
               key={categoryIndex}
@@ -213,7 +220,7 @@ function SkillsComp() {
                 {category.skills.map((skill, skillIndex) => {
                   const barKey = `${categoryIndex}-${skillIndex}`;
                   const shouldAnimate = animatedBars[barKey];
-                  
+
                   return (
                     <div key={skillIndex} className="space-y-2">
                       <div className="flex items-center justify-between">
@@ -229,7 +236,7 @@ function SkillsComp() {
                       <div className="w-full h-1.5 bg-gray-700 rounded-full overflow-hidden">
                         <div
                           className={`h-full bg-gradient-to-r ${category.color} rounded-full transform origin-left transition-all duration-1000 ease-out`}
-                          style={{ 
+                          style={{
                             width: shouldAnimate ? `${skill.level}%` : '0%',
                             transitionDelay: `${categoryIndex * 0.1 + skillIndex * 0.05}s`,
                           }}
@@ -239,7 +246,7 @@ function SkillsComp() {
                   );
                 })}
               </div>
-              
+
               <div className="mt-6 pt-4 border-t border-gray-700/50 flex justify-between text-sm">
                 <span className="text-gray-400 group-hover:text-gray-300 transition-colors duration-300">Expertise Level</span>
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-400 font-semibold relative">
@@ -249,6 +256,20 @@ function SkillsComp() {
               </div>
             </div>
           ))}
+        </div>
+        <div className='border border-white/20 p-3 pointer-events-none'>
+          <p className='text-blue-700 mb-2'>ENGINEERING DNA</p>
+          <div className='grid md:grid-cols-2'>
+            <div>
+              <p>My methodology is rooted in type-safety</p>
+              <p>clean architecture, and performance standards</p>
+            </div>
+            <div className='flex justify-end gap-5'>
+              <p className='text-blue-800'>Clean Code</p>
+              <p className='text-blue-800'>Type safe</p>
+              <p className='text-blue-800'>Performance</p>
+            </div>
+          </div>
         </div>
       </div>
 
