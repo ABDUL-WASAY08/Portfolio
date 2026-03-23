@@ -1,7 +1,9 @@
 import React from 'react';
 import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 function HeaderComp() {
+  const navigate=useNavigate();
   const navItems = [
     { id: 'home', label: 'Home' },
     { id: 'about', label: 'About' },
@@ -89,6 +91,15 @@ function HeaderComp() {
               <span className={`absolute bottom-0 left-0 w-full h-0.5 bg-blue-600 dark:bg-blue-400 transform scale-x-0 transition-transform duration-300 origin-left group-hover:scale-x-100 ${activeSection === 'skills' ? 'scale-x-100' : ''
                 }`}></span>
             </button>
+             <button
+              onClick={() => navigate('/Contact')}
+              className={`cursor-pointer relative px-3 py-2 text-sm font-medium transition-colors duration-300 group ${activeSection === 'skills'
+                ? 'text-blue-600 dark:text-blue-400'
+                : 'text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400'
+                }`}
+            >
+              Conatct
+            </button>
           </div>
           <div className="hidden md:block">
             <a
@@ -134,6 +145,12 @@ function HeaderComp() {
               >
                 Download Resume
               </a>
+              <button
+              onClick={()=>navigate('/Contact')}
+                className="block w-full text-center mt-4 px-3 py-3 bg-purple-600 text-white rounded-md font-medium"
+              >
+                Download Resume
+              </button>
             </div>
           </div>
         )}
