@@ -1,10 +1,13 @@
 import React from 'react';
 import { useForm, ValidationError } from '@formspree/react';
-import { Mail, Send, MessageSquare, CheckCircle, ArrowLeft } from 'lucide-react';
+import { Mail, Send, MessageSquare, CheckCircle, ArrowLeft, PhoneIcon } from 'lucide-react';
 import HeaderComp from './HeaderComp';
 import { useNavigate } from 'react-router-dom';
 
 function ContactForm() {
+    const phoneNumber = "923315789320";
+    const message = "Hi Abdul Wasay, I saw your portfolio and wanted to connect!";
+    const WhatSapURL = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`
     const [state, handleSubmit] = useForm("mqeyrpzk");
     const navigate = useNavigate();
     if (state.succeeded) {
@@ -41,7 +44,7 @@ function ContactForm() {
                         <h3 className="text-2xl font-bold text-white mb-2">Thanks for joining!</h3>
                         <p className="text-gray-300">We'll get back to you soon.</p>
                         <button className='text-2xl p-3 mt-5 text-white cursor-pointer bg-gray-900 rounded-2xl hover:bg-gray-700 transition-all duration-300 transform hover:scale-105 active:scale-95'
-                        onClick={()=>navigate('/')}
+                            onClick={() => navigate('/')}
                         >
                             Back to home
                         </button>
@@ -167,6 +170,17 @@ function ContactForm() {
                         </div>
                     </form>
                 </div>
+                <div className='border-b w-1/2 border-dashed border-white/10 mt-10 mx-auto '>
+                </div>
+                <a
+                    href={WhatSapURL}
+                    target='_blank'
+                    className=" flex gap-2 mt-5 items-center justify-center"
+                    aria-label="Email"
+                >
+                    <span>contact On whatsap</span>
+                    <PhoneIcon size={22} />
+                </a>
             </div>
         </div>
     );
