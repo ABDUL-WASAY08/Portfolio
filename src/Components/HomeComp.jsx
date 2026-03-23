@@ -1,9 +1,12 @@
 import React from 'react';
-import { Github, Linkedin, Mail, FileText, Code2, Coffee, Globe, Zap } from 'lucide-react';
+import { Github, Linkedin, Mail, FileText, Code2, Coffee, Globe, Zap, PhoneIcon } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 
 function HomeComp() {
     const navigate=useNavigate();
+    const phoneNumber = "923315789320"; 
+  const message = "Hi Abdul Wasay, I saw your portfolio and wanted to connect!";
+  const WhatSapURL=`https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`
   return (
     <section id="home" className="min-h-screen w-full flex items-center justify-center pt-16 bg-gradient-to-b from-gray-80 to-white/10 dark:from-black dark:to-gray-900">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-20">
@@ -74,11 +77,12 @@ function HomeComp() {
                 <Linkedin size={22} />
               </a>
               <a 
-                href="mailto:officialtaha004@email.com" 
+              href={WhatSapURL}
+              target='_blank'
                 className="p-3 bg-gray-100 dark:bg-gray-800 rounded-full text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-gray-200 dark:hover:bg-gray-700 transition-all duration-300 transform hover:scale-110"
                 aria-label="Email"
               >
-                <Mail size={22} />
+                <PhoneIcon size={22} />
               </a>
             </div>
           </div>
