@@ -1,9 +1,9 @@
 import React from 'react';
-import { Link } from 'react-router-dom'; 
 import { useState } from 'react';
 
 function HeaderComp() {
-  const [activeSection, setActiveSection] = useState('home');
+
+  const [activeSection, setActiveSection] = useState('');
 
   const scrollToSection = (sectionId) => {
     setActiveSection(sectionId);

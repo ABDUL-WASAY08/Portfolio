@@ -1,7 +1,9 @@
 import React from 'react';
 import { Github, Linkedin, Mail, FileText, Code2, Coffee, Globe, Zap } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
 
 function HomeComp() {
+    const navigate=useNavigate();
   return (
     <section id="home" className="min-h-screen w-full flex items-center justify-center pt-16 bg-gradient-to-b from-gray-80 to-white/10 dark:from-black dark:to-gray-900">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-20">
@@ -42,13 +44,13 @@ function HomeComp() {
                 <FileText size={20} />
                 Download Resume
               </a>
-              <a 
-                href="#contact"
-                className="inline-flex items-center gap-2 px-6 py-3 border-2 border-gray-300 dark:border-gray-700 hover:border-blue-600 dark:hover:border-blue-400 text-gray-700 dark:text-gray-300 font-medium rounded-lg transition-all duration-300 hover:shadow-lg"
+              <p 
+                onClick={()=>navigate('/Contact')}
+                className="inline-flex items-center gap-2 px-6 py-3 border-2 border-gray-300 dark:border-gray-700 hover:border-blue-600 dark:hover:border-blue-400 text-gray-700 dark:text-gray-300 font-medium rounded-lg transition-all duration-300 hover:shadow-lg cursor-pointer"
               >
                 <Mail size={20} />
                 Contact Me
-              </a>
+              </p>
             </div>
 
             {/* Social Links */}
