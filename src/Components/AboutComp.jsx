@@ -11,7 +11,7 @@ function AboutComp() {
       icon: React.createElement(Gamepad2, { className: "w-5 h-5 md:w-6 md:h-6" }),
       title: "PUBG Addict (2017)",
       description: "One night in Class 10, while playing PUBG, a thought struck - 'How is this game made?' That curiosity changed everything!",
-      color: "bg-orange-500",
+      color: "bg-gray-800",
       fun: "🎮 Killed more time than enemies!"
     },
     {
@@ -25,14 +25,14 @@ function AboutComp() {
       icon: React.createElement(Code, { className: "w-5 h-5 md:w-6 md:h-6" }),
       title: "API Discovery",
       description: "Heard about APIs in my 2nd semester. Got curious, started searching, found it interesting. Now this is my thing!",
-      color: "bg-purple-500",
+      color: "bg-gray-700",
       fun: "🤯 APIs > PUBG (sometimes)"
     },
     {
       icon: React.createElement(Rocket, { className: "w-5 h-5 md:w-6 md:h-6" }),
       title: "Current Status",
       description: "Been handling APIs for 2 years now. No time to play games anymore because APIs have become my game!",
-      color: "bg-green-500",
+      color: "bg-blue-800",
       fun: "🚀 Deploying code & chaos since 2 years"
     }
   ];
@@ -112,7 +112,7 @@ function AboutComp() {
                   </div>
                   {/* Pulse effect when visible */}
                   {visibleItems.includes(index) && (
-                    <div className={`absolute inset-0 rounded-full animate-ping opacity-75 ${item.color}`} style={{ animationDuration: '1.5s' }} />
+                    <div className={`absolute inset-0 rounded-full animate-ping opacity-75 `} style={{ animationDuration: '1.5s' }} />
                   )}
                 </div>
                 
