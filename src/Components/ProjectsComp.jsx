@@ -25,7 +25,7 @@ function ProjectsComp() {
       fullDescription: "AI Resume Builder is a cutting-edge application that leverages artificial intelligence to help job seekers create professional resumes. The tool analyzes job descriptions and provides personalized suggestions to optimize your resume for specific roles. Features include real-time formatting suggestions, keyword optimization, ATS compatibility checking, and multiple template options. Built with React for the frontend and Node.js with OpenAI API for the backend, this application demonstrates the power of AI in career development.",
       icon: <Sparkles className="w-6 h-6" />,
       tags: ["React", "Node.js", "GrokAPI", "MongoDB"],
-      liveLink: "",
+      liveLink: "https://resume-builder-frontend-rosy-two.vercel.app/",
       githubLink: "https://github.com/ABDUL-WASAY08/ResumeBuilder_Frontend",
       color: "from-purple-500 to-pink-500",
       gradient: "",
