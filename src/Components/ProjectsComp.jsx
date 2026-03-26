@@ -70,7 +70,7 @@ function ProjectsComp() {
     },
     {
       id: 4,
-      title: "Social Garam (currently working )",
+      title: "Social Garam (under progress )",
       description:
         "Vibrant social media platform with real-time chats, stories, reels, and AI-powered content recommendations to keep conversations spicy! 🔥",
       fullDescription: "Social Garam is a dynamic social media platform designed for modern digital interactions. The app features real-time messaging with Socket.io, stories that disappear after 24 hours, short-form video content (reels), and AI-powered content recommendations. Users can create profiles, follow others, like and comment on posts, and participate in community discussions. The platform includes robust moderation tools and analytics for content creators.",

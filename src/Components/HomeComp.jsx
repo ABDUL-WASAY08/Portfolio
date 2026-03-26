@@ -97,7 +97,7 @@ function HomeComp() {
               <div className="flex items-center gap-4 mb-6">
                 <div>
                   <h3 className="text-xl font-bold text-gray-900 dark:text-white">Web Developer</h3>
-                  <p className="text-gray-600 dark:text-gray-400">Specility: Manage apis</p>
+                  <p className="text-gray-600 dark:text-gray-400">Speciality: Manage apis</p>
                 </div>
               </div>
 
@@ -167,7 +167,7 @@ function HomeComp() {
                 Tech Stack
               </h4>
               <div className="flex flex-wrap gap-2">
-                {['Python', 'Node.js', 'React', 'Mongoose', 'GrapgQl', 'Cloudinary', 'AWS', 'Docker', 'Express'].map((tech) => (
+                {['Python', 'Node.js', 'React', 'Mongoose', 'GraphQl', 'Cloudinary', 'AWS', 'Docker', 'Express'].map((tech) => (
                   <span
                     key={tech}
                     className="px-3 py-1 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded-full text-sm font-medium hover:bg-blue-100 dark:hover:bg-blue-900/30 hover:text-blue-600 dark:hover:text-blue-400 transition-colors cursor-default"
