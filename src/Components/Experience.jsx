@@ -8,10 +8,10 @@ const ExperienceSection = () => {
       title: "Full Stack Developer Intern",
       company: "EliteTech.pk",
       location: "Pakistan",
-      period: "January 2026 - March 2026",
-      startDate: "January 2026",
+      period: "November 2025 - March 2026",
+      startDate: "November 2025",
       endDate: "March 2026",
-      duration: "3 months",
+      duration: "5 months",
       description: [
         "Developed and maintained full-stack web applications using modern JavaScript frameworks",
         "Collaborated with cross-functional teams to deliver high-quality software solutions",
@@ -26,10 +26,10 @@ const ExperienceSection = () => {
       title: "App Developer (React Native)",
       company: "GrowStep",
       location: "Pakistan",
-      period: "February 2026 - Present",
-      startDate: "February 2026",
-      endDate: "Present",
-      duration: "2+ months",
+      period: "December 2025 - March 2026",
+      startDate: "December 2025",
+      endDate: "30 March 2026 ",
+      duration: "3+ months",
       description: [
         "Built cross-platform mobile applications using React Native",
         "Implemented native-like features and smooth animations for enhanced user experience",
@@ -37,6 +37,21 @@ const ExperienceSection = () => {
         "Collaborated with designers to implement pixel-perfect UI components"
       ],
       technologies: ["React Native", "JavaScript", "Redux"],
+      icon: Smartphone
+    },
+    {
+      id: 3,
+      title: "DevOps Engineer and Full Stack developer",
+      company: "Firnas Tech",
+      location: "Pakistan",
+      period: " 2023 - 2024",
+      startDate: "February 2023",
+      endDate: "January 2024",
+      duration: "1 Year",
+      description: [
+        "I am a Full-Stack Developer and DevOps Enthusiast specializing in the MERN stack and cloud architecture. I take full ownership of the software lifecycle, bridging the gap between writing clean, scalable code and deploying resilient, containerized applications. My focus is on building innovative, production-ready systems that are optimized for both performance and reliability."
+      ],
+      technologies: ["DevOps", "JavaScript", "Redux"],
       icon: Smartphone
     }
   ];
@@ -69,7 +84,7 @@ const ExperienceSection = () => {
                   opacity: 0,
                   transform: 'translateY(20px)'
                 }}
-              >                
+              >
                 <div className="flex flex-col md:flex-row md:items-start gap-6">
                   <div className="flex-shrink-0">
                     <div className="w-14 h-14 bg-gradient-to-br from-blue-500 to-purple-600 rounded-xl flex items-center justify-center shadow-lg">

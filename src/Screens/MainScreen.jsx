@@ -16,12 +16,12 @@ function MainScreen() {
       <div id='home'>
         <HomeComp />
       </div>
-      <div>
-        <AboutComp />
-      </div>
       <ProjectsComp />
       <div id='Experience'>
         <ExperienceSection />
+      </div>
+      <div>
+        <AboutComp />
       </div>
       <SkillsComp />
       <div id='Footer'>

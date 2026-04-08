@@ -14,7 +14,7 @@ function HomeComp() {
           <div className="space-y-8">
             <div className="space-y-2 pointer-events-none">
               <p className="text-blue-600 dark:text-blue-400 font-medium text-md animate-fade-in">
-                👋 Hello, I'm
+                 Hello, I'm
               </p>
               <h1 className="text-3xl md:text-3xl lg:text-4xl font-bold text-gray-900 dark:text-white">
                 Abdul<span className="text-blue-600 dark:text-blue-400">wasay</span>
@@ -23,7 +23,7 @@ function HomeComp() {
             <div className="flex items-center gap-3 flex-wrap pointer-events-none">
               <div className="bg-blue-100 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 px-4 py-2 rounded-full font-medium inline-flex items-center gap-2">
                 <Code2 size={20} />
-                Backend Developer
+                Full Stack 
               </div>
               <div className="bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400 px-4 py-2 rounded-full font-medium inline-flex items-center gap-2">
                 <Zap size={20} />
@@ -32,7 +32,7 @@ function HomeComp() {
             </div>
             <p className="text-lg text-gray-600 dark:text-gray-400 max-w-2xl leading-relaxed pointer  pointer-events-none">
               I build scalable backend systems and APIs while having a cup of coffee 🍵.
-              Specialized in Python, Node.js,react, and cloud architecture with 2+ years of experience
+              Specialized in Full Stack , Ai and DevOps  with 5+ years of experience
               turning complex problems into elegant solutions.
             </p>
 
@@ -96,7 +96,7 @@ function HomeComp() {
             <div className=" dark:bg-white/1 rounded-2xl shadow-xl p-8  border-gray-900 pointer-events-none">
               <div className="flex items-center gap-4 mb-6">
                 <div>
-                  <h3 className="text-xl font-bold text-gray-900 dark:text-white">Web Developer</h3>
+                  <h3 className="text-xl font-bold text-gray-900 dark:text-white">Full Stack Developer</h3>
                   <p className="text-gray-600 dark:text-gray-400">Speciality: Manage apis</p>
                 </div>
               </div>
@@ -104,11 +104,11 @@ function HomeComp() {
               {/* Quick Stats */}
               <div className="grid grid-cols-2 gap-4 mb-6">
                 <div className="text-center p-3 bg-gray-50 dark:bg-gray-700/50 rounded-xl">
-                  <p className="text-2xl font-bold text-blue-600 dark:text-blue-400">1+</p>
+                  <p className="text-2xl font-bold text-blue-600 dark:text-blue-400">5+</p>
                   <p className="text-xs text-gray-600 dark:text-gray-400">Years</p>
                 </div>
                 <div className="text-center p-3 bg-gray-50 dark:bg-gray-700/50 rounded-xl">
-                  <p className="text-2xl font-bold text-blue-600 dark:text-blue-400">10+</p>
+                  <p className="text-2xl font-bold text-blue-600 dark:text-blue-400">30+</p>
                   <p className="text-xs text-gray-600 dark:text-gray-400">Projects</p>
                 </div>
               </div>
@@ -167,7 +167,7 @@ function HomeComp() {
                 Tech Stack
               </h4>
               <div className="flex flex-wrap gap-2">
-                {['Python', 'Node.js', 'React', 'Mongoose', 'GraphQl', 'Cloudinary', 'AWS', 'Docker', 'Express'].map((tech) => (
+                {['Python', 'Node.js', 'React', 'Mongoose', 'GraphQl', 'Cloudinary', 'AWS', 'Docker', 'Express',"Django", "AI"].map((tech) => (
                   <span
                     key={tech}
                     className="px-3 py-1 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded-full text-sm font-medium hover:bg-blue-100 dark:hover:bg-blue-900/30 hover:text-blue-600 dark:hover:text-blue-400 transition-colors cursor-default"
