@@ -70,18 +70,18 @@ function ProjectsComp() {
     },
     {
       id: 4,
-      title: "Social Garam (under progress )",
+      title: "Code Based Architecture",
       description:
-        "Vibrant social media platform with real-time chats, stories, reels, and AI-powered content recommendations to keep conversations spicy! 🔥",
-      fullDescription: "Social Garam is a dynamic social media platform designed for modern digital interactions. The app features real-time messaging with Socket.io, stories that disappear after 24 hours, short-form video content (reels), and AI-powered content recommendations. Users can create profiles, follow others, like and comment on posts, and participate in community discussions. The platform includes robust moderation tools and analytics for content creators.",
+        "AI-powered repository analyzer that uses LLMs to map complex codebases and provide instant architectural insights. It simplifies developer onboarding through automated logic analysis and a sleek, futuristic interface.",
+      fullDescription: "The Codebase Architect is an AI-powered repository analysis tool that utilizes LLMs to provide deep architectural insights and semantic understanding of complex Git environments. Engineered with a high-fidelity glassmorphic UI, it streamlines developer onboarding by automating code reviews and logic mapping in real-time.",
       icon: <MessageSquare className="w-6 h-6" />,
-      tags: ["React Native", "Socket.io", "Redis", "Firebase"],
-      liveLink: "",
+      tags: ["React Native", "Socket.io", "Redis", "Firebase", "Ai Integration"],
+      liveLink: "https://the-codebase-architect-frontend.vercel.app/",
       githubLink: "https://github.com/ABDUL-WASAY08/PersonaMail_Frontend",
       color: "from-orange-500 to-red-500",
-      gradient: "",
-      image: "./personaMail.png",
-      date: "April 2024"
+      gradient: "https://github.com/ABDUL-WASAY08/The-Codebase-Architect_frontend.git",
+      image: "./codeBased.png",
+      date: "April 2025"
     },
   ];
 
