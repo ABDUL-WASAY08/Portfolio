@@ -1,21 +1,8 @@
+import React from 'react';
+import MainScreen from './Screens/MainScreen';
 
-import ContactForm from './Components/ContactComp'
-import HeaderComp from './Components/HeaderComp'
-import './index.css'
-import MainScreen from './Screens/MainScreen'
-import { Route,BrowserRouter,Routes } from 'react-router-dom'
 function App() {
-
-  return (
-    <BrowserRouter>
-    <Routes>
-      <Route path='/' element={<MainScreen />}/>
-      <Route path='/Contact' element={<ContactForm />}/>
-    </Routes>
-    </BrowserRouter>
-    
-   
-  )
+  return <MainScreen />;
 }
 
-export default App
+export default App;
